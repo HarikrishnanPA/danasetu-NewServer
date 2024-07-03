@@ -33,11 +33,12 @@ app.use("/api/v1/complaint",require("./routes/complaintRoutes"));
 app.use("/api/v1/admin", require("./routes/adminRoutes"));
 app.use("/api/v1/feedback",require("./routes/feedbackRoutes"));
 
+
 //HOME
 app.get("/", (req,res)=>{
   res.status(200).send({
     "success":true,
-    "msg":"Node server running"
+    "msg":"node server running"
   })
 })
 
